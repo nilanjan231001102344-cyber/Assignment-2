@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  background: #0f172a;
+  color: white;
+  padding: 28px 30px;
+  border-bottom: 3px solid #38bdf8;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+
+  font-size: 26px;
+}
+
+.header h1 {
+  font-size: 25px;
+  margin-bottom: 3px;
+}
+
+.header p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* =========================
+   STUDENT SECTION
+========================= */
+
+.student-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.section-label {
+  color: #0284c7;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.section-heading h2 {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.section-description {
+  color: #64748b;
+}
+
+/* =========================
+   SORT
+========================= */
+
+.sort-box {
+  min-width: 230px;
+}
+
+.sort-box label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.sort-box select {
+  width: 100%;
+  padding: 12px 14px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+
+  background: white;
+  color: #0f172a;
+
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.sort-box select:focus {
+  border-color: #38bdf8;
+}
+
+/* =========================
+   STUDENT COUNT
+========================= */
+
+.student-count {
+  margin-bottom: 25px;
+
+  color: #64748b;
+  font-size: 14px;
+}
+
+.student-count span {
+  display: inline-flex;
+
+  min-width: 30px;
+  height: 30px;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 7px;
+
+  background: #e0f2fe;
+  color: #0284c7;
+
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* =========================
+   STUDENT GRID
+========================= */
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* =========================
+   STUDENT CARD
+========================= */
+
+.student-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 25px;
+
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+
+  transition: 0.3s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+}
+
+/* =========================
+   CARD TOP
+========================= */
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.student-photo {
+  width: 70px;
+  height: 70px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+  border: 3px solid #e0f2fe;
+}
+
+.student-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-basic h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.roll-number {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* =========================
+   DETAILS
+========================= */
+
+.student-details {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail-item span {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.detail-item strong {
+  font-size: 13px;
+}
+
+/* =========================
+   CGPA
+========================= */
+
+.cgpa-section {
+  padding-top: 18px;
+  border-top: 1px solid #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cgpa-section > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.cgpa-section span {
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.cgpa-section strong {
+  color: #0284c7;
+  font-size: 26px;
+}
+
+.cgpa-badge {
+  padding: 6px 10px;
+
+  background: #e0f2fe;
+  color: #0284c7;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 35px 30px 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding-bottom: 25px;
+}
+
+.footer h3 {
+  margin-bottom: 5px;
+}
+
+.footer p {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: auto;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #1e293b;
+
+  text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+  .student-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .student-section {
+    padding: 45px 20px;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sort-box {
+    width: 100%;
+  }
+
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 22px 20px;
+  }
+
+  .header h1 {
+    font-size: 21px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .student-card {
+    padding: 20px;
+  }
+
+  .student-details {
+    grid-template-columns: 1fr;
+  }
+}
